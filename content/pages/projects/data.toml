@@ -1,0 +1,31 @@
+[[project]]
+name = "کیتا فارسی"
+desc = "کیتا فارسی یک قالب زیبا، ساده و روان برای زولا است."
+tags = ["بلاگ", "زولا", "فارسی", "قالب", "زولا", "فارسی", "کیتا", "فارسی", "کیتا فارسی"]
+links = [
+    { name = "گیت‌هاب", url = "https://github.com/daradege/kita-farsi" }
+]
+[[project]]
+name = "پایروبله"
+desc = "یک کتابخانه پایتون برای ساخت بازوی بله"
+tags = ["پایتون", "بازوی بله", "پایروبله", "پایتون", "بازوی بله", "پایروبله"]
+links = [
+    { name = "گیت‌هاب", url = "https://github.com/pyrobale/pyrobale" },
+    { name = "PyPi", url = "https://pypi.org/project/pyrobale/" }
+]
+[[project]]
+name = "پروژه SQbooster"
+desc = "پروژه SQbooster یک کتابخانه پایتون برای استفاده راحت تر از دیتابیس sql است"
+tags = ["پایتون", "اس کیو", "اس کیو بوستر", "پایتون", "اس کیو", "اس کیو بوستر"]
+links = [
+    { name = "گیت‌هاب", url = "https://github.com/daradege/sqbooster" },
+    { name = "PyPi", url = "https://pypi.org/project/sqbooster/" }
+]
+[[project]]
+name = "پروژه openwpb"
+desc = "پروژه openwpb یک ابزار مبتنی بر وب است که به شما اجازه میدهد به کمک توکن بازوی خود در بله، ارسال پیام های خود را مدیریت کنید"
+tags = ["بات", "بله", "openwpb", "بازو"]
+links = [
+    { name = "گیت‌هاب", url = "https://github.com/daradege/openwpb" },
+    { name = "سایت", url = "https://openwpb.daradege.ir" }
+]
