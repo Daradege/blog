@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: https://daradege.github.io/blog/sitemap.xml
+Sitemap: https://daradege.ir/blog/sitemap.xml
