@@ -1,5 +1,5 @@
 # The base URL of the site; the only required configuration variable.
-base_url = "https://daradege.github.io/blog"
+base_url = "https://daradege.ir/blog"
 
 # The site title and description; used in feeds by default.
 title = "وبلاگ رسمی علی صفامنش"
