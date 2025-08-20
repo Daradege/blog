@@ -1,0 +1,593 @@
+<!doctype html>
+<html class="not-ready lg:text-base" lang="fa">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Title -->
+  <title>
+    تعویض دیسترو به کجا رسید؟ - وبلاگ رسمی علی صفامنش
+  </title>
+
+  <!-- Meta -->
+  <meta name="theme-color" />
+
+  
+  <!-- Author -->
+  
+  <!---->
+  
+  <!---->
+  
+  <!---->
+  
+  <!---->
+  
+  <!---->
+  <meta name="description" content="نقد و بررسی دیسترو هایی که عوض کردم :)" />
+  <meta name="author" content="علی صفامنش" />
+  <!-- The Open Graph protocol -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="تعویض دیسترو به کجا رسید؟" />
+  <meta property="og:site_name" content="وبلاگ رسمی علی صفامنش" />
+  <meta property="og:description" content="نقد و بررسی دیسترو هایی که عوض کردم :)" />
+  <meta property="og:url" content="https:&#x2F;&#x2F;daradege.ir&#x2F;blog&#x2F;tajrobe-linux&#x2F;" />
+  
+  <!---->
+  
+  <!---->
+  
+  <!---->
+  
+  <meta property="og:image" content="https://daradege.ir/blog/icons/github.svg" />
+  
+  <!---->
+  
+
+  <!-- CSS & JS -->
+  <link rel="preload stylesheet" as="style" href="https://daradege.ir/blog/main.css" />
+  <style>
+    :root {
+      --bg: #f4f4f5;
+      --bg-dark: #18181b;
+      --header: #e4e4e7;
+      --header-dark: #27272a;
+    }
+    html[dir="rtl"] * {
+      text-align: right;
+    }
+    html[dir="ltr"] * {
+      text-align: left;
+    }
+  </style>
+
+  
+
+  <!-- Dark Icon -->
+  <link rel="preload" as="image" href="https://daradege.ir/blog/icons/theme.svg" />
+
+  <!-- Math -->
+  
+  <!---->
+
+  <!-- Mermaid -->
+  
+  <!---->
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://daradege.ir/blog/favicon.ico" />
+  <link rel="apple-touch-icon" href="https://daradege.ir/blog/apple-touch-icon.png" />
+
+  <!-- Feeds -->
+  
+
+  <!-- Canonical -->
+  <link rel="stylesheet" href="https://daradege.ir/blog/custom.css">
+  <link rel="canonical" href="https:&#x2F;&#x2F;daradege.ir&#x2F;blog&#x2F;tajrobe-linux&#x2F;" />
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+  <style>
+    @font-face {
+      font-family: 'Poppins';
+      src: url(https://daradege.ir/fonts/poppins.ttf);
+    }
+    * {
+      font-family: 'Poppins', "Vazirmatn", sans-serif;
+    }
+    [dir="rtl"] * {
+      font-family: "Vazirmatn", 'Poppins', sans-serif;
+    }
+  </style>
+
+  <!-- Head inject -->
+  
+</head>
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header
+  class="header fixed top-0 z-40 mx-auto min-h-[3.5rem] w-full"
+>
+  <div class="mx-auto w-full max-w-4xl p-3 lg:flex lg:justify-between">
+    <div class="flex justify-between">
+      <div class="flex items-center">
+        <div
+          class="btn-dark ms-4 h-6 w-6 shrink-0 cursor-pointer text-[0] [background:url(./icons/theme.svg)_left_center/cover_no-repeat] dark:invert dark:[background-position:right]"
+          role="button"
+          aria-label="Dark"
+        ></div>&nbsp;
+        <a class="text-2xl font-semibold" href="https://daradege.ir/blog">وبلاگ رسمی علی صفامنش</a>
+      </div>
+      
+      <div
+        class="btn-menu relative z-50 flex h-8 w-8 shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+        role="button"
+        aria-label="Menu"
+      ></div>
+      
+    </div>
+    <script>
+      // base
+      const htmlClass = document.documentElement.classList;
+      setTimeout(() => {
+        htmlClass.remove("not-ready");
+      }, 10);
+
+      // mobile menu
+      const btnMenu = document.querySelector(".btn-menu");
+      btnMenu?.addEventListener("click", () => {
+        htmlClass.toggle("open");
+      });
+
+      // dark theme
+      const setDark = (isDark) => {
+        if (isDark) {
+          document.body.dispatchEvent(new CustomEvent("set-theme", { detail: "dark" }));
+          htmlClass.add("dark");
+        } else {
+          document.body.dispatchEvent(new CustomEvent("set-theme", { detail: "light" }));
+          htmlClass.remove("dark");
+        }
+        localStorage.setItem("dark", isDark);
+      };
+
+      // init
+      const darkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+      if (htmlClass.contains("dark")) {
+        setDark(true);
+      } else {
+        const darkVal = localStorage.getItem("dark");
+        setDark(darkVal ? darkVal === "true" : darkScheme.matches);
+      }
+
+      // listen system
+      darkScheme.addEventListener("change", (event) => {
+        setDark(event.matches);
+      });
+
+      // manual switch
+      const btnDark = document.querySelector(".btn-dark");
+      btnDark.addEventListener("click", () => {
+        setDark(localStorage.getItem("dark") !== "true");
+      });
+    </script>
+    
+    <nav class="flex w-full items-center lg:w-auto">
+      <ul
+        class="nav-wrapper flex w-full flex-col py-2 lg:w-auto lg:flex-row lg:self-center lg:py-0"
+      >
+        
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://daradege.ir/blog/projects"
+            >پروژه‌ها</a
+          >
+        </li>
+        
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://daradege.ir/blog/archive"
+            >آرشیو</a
+          >
+        </li>
+        
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://daradege.ir/blog/tags"
+            >تگ‌ها</a
+          >
+        </li>
+        
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://daradege.ir/blog/about"
+            >درباره</a
+          >
+        </li>
+        
+      </ul>
+      <!-- Header Nav inject -->
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <!-- Body Start inject -->
+    
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl break-words px-4 pb-16 pt-32 dark:prose-invert prose-pre:rounded-lg prose-img:rounded-lg"
+    >
+      
+<article>
+  <!-- Page Start inject -->
+  
+
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">تعویض دیسترو به کجا رسید؟</h1>
+    <div class="text-sm antialiased opacity-60">
+  
+  <time>1404-02-29</time>
+  <span class="mx-1">&middot;</span>
+  <span>4 دقیقه</span>
+  <!---->
+  <!---->
+  <!---->
+  <!---->
+  
+  <span class="mx-1">&middot;</span>
+  <span>علی صفامنش</span>
+  
+  <!-- Page Info inject -->
+  
+</div>
+
+  </header>
+
+  
+
+  <!-- TOC -->
+  <!---->
+<div class="block-bg mb-12 flex rounded-lg p-2 text-lg">
+  <details>
+    <summary class="cursor-pointer py-1 pl-4">
+      <span style="padding: 10px;">جدول محتوا</span>
+    </summary>
+    <div class="px-2">
+      <ul>
+        
+        <li>
+          <a class="no-underline hover:underline" href="https://daradege.ir/blog/tajrobe-linux/#systm-mn"
+            >سیستم من</a
+          >
+          
+        </li>
+        
+        <li>
+          <a class="no-underline hover:underline" href="https://daradege.ir/blog/tajrobe-linux/#dystrw-hyy-khh-mthn-khrdm"
+            >دیسترو هایی که امتحان کردم</a
+          >
+          
+          <ul>
+            
+            <li>
+              <a class="no-underline hover:underline" href="https://daradege.ir/blog/tajrobe-linux/#slkhs"
+                >اسلکس</a
+              >
+            </li>
+            
+            <li>
+              <a class="no-underline hover:underline" href="https://daradege.ir/blog/tajrobe-linux/#mynt"
+                >مینت</a
+              >
+            </li>
+            
+            <li>
+              <a class="no-underline hover:underline" href="https://daradege.ir/blog/tajrobe-linux/#wbwntw"
+                >اوبونتو</a
+              >
+            </li>
+            
+            <li>
+              <a class="no-underline hover:underline" href="https://daradege.ir/blog/tajrobe-linux/#zwryn"
+                >زورین</a
+              >
+            </li>
+            
+            <li>
+              <a class="no-underline hover:underline" href="https://daradege.ir/blog/tajrobe-linux/#khly"
+                >کالی</a
+              >
+            </li>
+            
+            <li>
+              <a class="no-underline hover:underline" href="https://daradege.ir/blog/tajrobe-linux/#dbyn"
+                >دبیان</a
+              >
+            </li>
+            
+            <li>
+              <a class="no-underline hover:underline" href="https://daradege.ir/blog/tajrobe-linux/#prwt"
+                >پروت</a
+              >
+            </li>
+            
+            <li>
+              <a class="no-underline hover:underline" href="https://daradege.ir/blog/tajrobe-linux/#prch"
+                >پارچ</a
+              >
+            </li>
+            
+            <li>
+              <a class="no-underline hover:underline" href="https://daradege.ir/blog/tajrobe-linux/#grwd"
+                >گارودا</a
+              >
+            </li>
+            
+            <li>
+              <a class="no-underline hover:underline" href="https://daradege.ir/blog/tajrobe-linux/#mnjrw"
+                >مانجارو</a
+              >
+            </li>
+            
+            <li>
+              <a class="no-underline hover:underline" href="https://daradege.ir/blog/tajrobe-linux/#arch-khrft"
+                >آرچ کرفت</a
+              >
+            </li>
+            
+            <li>
+              <a class="no-underline hover:underline" href="https://daradege.ir/blog/tajrobe-linux/#arch"
+                >آرچ</a
+              >
+            </li>
+            
+          </ul>
+          
+        </li>
+        
+        <li>
+          <a class="no-underline hover:underline" href="https://daradege.ir/blog/tajrobe-linux/#bh-khj-rsydm"
+            >به کجا رسیدم؟</a
+          >
+          
+        </li>
+        
+        <li>
+          <a class="no-underline hover:underline" href="https://daradege.ir/blog/tajrobe-linux/#nkht-pyny"
+            >نکات پایانی</a
+          >
+          
+        </li>
+        
+      </ul>
+    </div>
+  </details>
+</div>
+
+<!---->
+
+  <!-- Content -->
+  <section><p>درود به همگی</p>
+<p>امروز میخوام از تجربه ای که توی لینوکس دارم یه کم براتون بشکافم.</p>
+<h1 id="systm-mn">سیستم من</h1>
+<p>یه چنین سیستمی دارم</p>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>daradege@archlinux ~ [1]&gt; neofetch 
+</span><span>                   -`                    daradege@archlinux 
+</span><span>                  .o+`                   ------------------ 
+</span><span>                 `ooo/                   OS: Arch Linux x86_64 
+</span><span>                `+oooo:                  Host: HP EliteDesk 800 G1 SFF 
+</span><span>               `+oooooo:                 Kernel: 6.15.8-arch1-1 
+</span><span>               -+oooooo+:                Uptime: 12 mins 
+</span><span>             `/:-:++oooo+:               Packages: 1326 (pacman), 12 (flatpak) 
+</span><span>            `/++++/+++++++:              Shell: fish 4.0.2 
+</span><span>           `/++++++++++++++:             Resolution: 1280x1024 
+</span><span>          `/+++ooooooooooooo/`           DE: Plasma 6.4.3 
+</span><span>         ./ooosssso++osssssso+`          WM: kwin 
+</span><span>        .oossssso-````/ossssss+`         Theme: Dracula [GTK3] 
+</span><span>       -osssssso.      :ssssssso.        Icons: Dracula [GTK3] 
+</span><span>      :osssssss/        osssso+++.       Terminal: kitty 
+</span><span>     /ossssssss/        +ssssooo/-       CPU: Intel i7-4770 (8) @ 3.900GHz 
+</span><span>   `/ossssso+/:-        -:/+osssso+-     GPU: NVIDIA GeForce GT 710 
+</span><span>  `+sso+:-`                 `.-/+oso:    GPU: Intel HD Graphics 
+</span><span> `++:.                           `-/+/   Memory: 2235MiB / 15898MiB 
+</span><span> .`                                 `/
+</span></code></pre>
+<h1 id="dystrw-hyy-khh-mthn-khrdm">دیسترو هایی که امتحان کردم</h1>
+<p><strong>دیسترو هایی که این زیر مینویسنم رو همه رو روی سیستم خودم و روی هارد نصب کردم و از ماشین مجازی استفاده نکردم</strong></p>
+<p>ترتیبش رو چون از چیزی که تو ذهنمه میگم ممکنه اشتباه باشه</p>
+<p>یه مدت هم داشتم ایزو ایمیج جمع میکردم شاید نسخه ها در تداخل باشن با ترتیب نصب ولی خب</p>
+<h2 id="slkhs">اسلکس</h2>
+<p>نسخه: دبیانی</p>
+<p>ویندو منیجر: Fluxbox</p>
+<p>زمانی که توی دیسکورد بودم یه دوستی داشتم که لینوکس داشت.</p>
+<p>راهنماییم کرد تا slax که یه دیستروی لایو هست رو نصب و تست کنم.</p>
+<p>و اونجا از لینوکس خوشم اومد.</p>
+<h2 id="mynt">مینت</h2>
+<p>نسخه: Vanessa فکر کنم</p>
+<p>دسکتاپ: سینامون</p>
+<p>اول از همه عید پیارسال بود که خواستم لینوکس مینت سینامون رو دوال بوت کنم و زدم ویندوز رو پروندم :)</p>
+<p>و توی اون مدتی که ویندوز نداشتم به لینوکس عادت کردم و وقتی که ویندوز ریختم و لینوکس رو پاک کردم دوباره کرمم گرفت
+و مینت نصب کردم ولی این سری حواسم به این بود که ویندوزو نپرونم.</p>
+<p>مینت خیلی خوب بود ولی مشکل اصلیش این بود که من کرم داشتم و رفتم دیسترو های جدید رو امتحان کنم</p>
+<p>البته واقعا نسبت بقیه دیسترو ها <strong>سنگین</strong> حساب میشه.</p>
+<h2 id="wbwntw">اوبونتو</h2>
+<p>نسخه: 24.04</p>
+<p>دسکتاپ: گنوم</p>
+<p>دنبال یه چیزی بودم که جامعه بزرگتری داشته باشه پس اوبونتو رو تست کردم</p>
+<p>مدت زمان زیادی نداشتمش پس تجربه خاصی هم ازش ندارم</p>
+<p>خیلی سنگین بود و لگ میزد پس رفتم سراغ بعدی</p>
+<h2 id="zwryn">زورین</h2>
+<p>نسخه: 17.2</p>
+<p>دسکتاپ: KDE فکر کنم</p>
+<p>چون واقعا سنگین بود و خیلی خیلی موس لگ میزد اصلا نموندم و رفتم بعدی</p>
+<h2 id="khly">کالی</h2>
+<p>نسخه: 2024.2</p>
+<p>دسکتاپ: xfce</p>
+<p>خیلی خیلی زیبا بود و انیمیشن های باحالی داشت و واقعا حس هکر بودن رو منتقل میکرد</p>
+<p>چندین بار نصب کردم ولی بعد از 20 دقیقه صفحه لگ میشد و موس تکون نمیخورد.</p>
+<p>و میرور هاشم تحریم بود</p>
+<p>باعث شد که خیلی زود برم دیستروی بعدی</p>
+<h2 id="dbyn">دبیان</h2>
+<p>نسخه: 12.11.0 فکر کنم</p>
+<p>دسکتاپ: اصلا به دسکتاپ نرسید</p>
+<p>این چون tty بود اصلا بلد نبودم دسکتاپ بریزم رفتم بعدی</p>
+<h2 id="prwt">پروت</h2>
+<p>نسخه: 6.3.2 Home</p>
+<p>دسکتاپ: xfce</p>
+<p>مشکلی از این یادم نمیاد ولی اینجا بود که پام به آرچ بیس باز شد</p>
+<h2 id="prch">پارچ</h2>
+<p>نسخه: چون توی اسم فایل نسخه شو نزده بود الان نمیدونم چه نسخه ای بود ولی حدودا پاییز 1403 بود فکر کنم</p>
+<p>دسکتاپ: KDE</p>
+<p>واقعا عالی بود و هیچ نقصی نداشت. هم میرور کاملی داشت و هم تیم توسعه فعال و قدرتمندی داره. هنوز هم درحال توسعه ست.</p>
+<p>مشکلی که داشت این بود که چون من تازه از دبیان اومده بودم آرچ بیس فکر میکردم باید یه چیزی مثل فایل های .deb اینجا هم باشه ولی نبود.</p>
+<h2 id="grwd">گارودا</h2>
+<p>نسخه: garuda-dr460nized-gaming-linux-zen-240428</p>
+<p>دسکتاپ: KDE dr460nized</p>
+<p>خیلی پر زرق و برق بود اصلا خوشم نیومد رفتم بعدی</p>
+<h2 id="mnjrw">مانجارو</h2>
+<p>نسخه: نسخه ای که تو هاردم دارم جدیده یه سری قدیمیا رو پاک کردم</p>
+<p>دسکتاپ: KDE</p>
+<p>عالی بود.</p>
+<p>تنها دیسترویی بود تو آرچ بیس ها که میتونم کار کردن باهاش رو <strong>آسون و ویندوز فن پسند</strong> تلقی کنم.</p>
+<p>البته واقعا سنگین بود ولی راحتیشو تحمل میکردم.</p>
+<p>کلی از مفاهیم پایه ای لینوکس رو روی مانجارو یاد گرفتم</p>
+<h2 id="arch-khrft">آرچ کرفت</h2>
+<p>نسخه: 2025.07.12</p>
+<p>ویندو منیجر: OpenBox</p>
+<p>خیلی خیلی خیلی قشنگ اوپن باکس رو کانفیگ کرده بودن و خیلی قشنگ بودن ولی متاسفانه تحریم بود.</p>
+<p>تحریم بودنش باعث شد بیخیال بشم و با کله به سمت آرچ رفتم</p>
+<h2 id="arch">آرچ</h2>
+<p>نسخه: 2025.06.01</p>
+<p>دسکتاپ: KDE, Gnome, xfce, i3, niri, OpenBox, Deepin</p>
+<p>آرچ دیگه شد آزمایشگاه.</p>
+<p>هرچی میتونستم رو روش تست کردم تا جایی که چندین بار همه چیزم پرید ولی خیلی حال داد.</p>
+<p>الان هم آرچ دارم و خیلی دارم لذت میبرم</p>
+<p>همین که خالصه و از قبل چیزی نداره که با دستکاری خراب بشه عالیه.</p>
+<p>یه روز حتما میشینم و از آرچ مینویسم براتون.</p>
+<h1 id="bh-khj-rsydm">به کجا رسیدم؟</h1>
+<p>واقعا هیچی دیسترویی نمیشه که میخوای، ولی برای من آرچ نزدیک ترین چیزی به اونی که میخوام بود.</p>
+<p>جامعه بزرگ و خوبی هم داره.</p>
+<p>اگر نیاز داشتید سوالی چیزی بپرسید تو <a href="https://t.me/+Wu-iJNlA1j5kMGJk">گروه تلگرام</a> هستیم میتونید بپرسید بچه ها جواب بدن.</p>
+<h1 id="nkht-pyny">نکات پایانی</h1>
+<p>دیسترو های دیگه ای هم تست کردم ولی خیلی چیز قابل توجهی نبودن که بذارمشون (OpenSUSE, Apine, Fedora و ...)</p>
+<p>مکات دیگه ای هم هست ولی مطلب طولانی شد.</p>
+<p>تا مطالب بعدی خدانگهدار :)</p>
+</section>
+
+  <hr />
+
+  <!-- Post Taxonomies -->
+  
+<footer class="mt-12 flex flex-col">
+  <!---->
+  <!---->
+  <!---->
+  <!---->
+  
+  <div class="mb-2 flex flex-wrap">
+    <span class="block-bg mb-1.5 mr-1.5 rounded-lg px-5 py-1.5">Tags </span>
+    
+    <a
+      class="block-bg block-hover mb-1.5 mr-1.5 rounded-lg px-5 py-1.5 no-underline"
+      href="https://daradege.ir/blog/tags/systm-ml/"
+      >سیستم_عامل</a
+    >
+    
+    <a
+      class="block-bg block-hover mb-1.5 mr-1.5 rounded-lg px-5 py-1.5 no-underline"
+      href="https://daradege.ir/blog/tags/brrsy/"
+      >بررسی</a
+    >
+    
+    <a
+      class="block-bg block-hover mb-1.5 mr-1.5 rounded-lg px-5 py-1.5 no-underline"
+      href="https://daradege.ir/blog/tags/nqd/"
+      >نقد</a
+    >
+    
+    <a
+      class="block-bg block-hover mb-1.5 mr-1.5 rounded-lg px-5 py-1.5 no-underline"
+      href="https://daradege.ir/blog/tags/dystrw/"
+      >دیسترو</a
+    >
+    
+    <a
+      class="block-bg block-hover mb-1.5 mr-1.5 rounded-lg px-5 py-1.5 no-underline"
+      href="https://daradege.ir/blog/tags/lynwkhs/"
+      >لینوکس</a
+    >
+    
+  </div>
+  
+</footer>
+
+<!---->
+
+  <!-- Post Nav -->
+  
+<nav class="block-bg mt-12 flex flex-wrap rounded-lg text-lg">
+  
+  <a
+    class="block-hover-mask ml-auto flex min-w-[50%] grow items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline"
+    href="https:&#x2F;&#x2F;daradege.ir&#x2F;blog&#x2F;khdhfz-blh&#x2F;"
+    ><span class="ml-1.5">→&nbsp;&nbsp;</span><span>خداحافظ بله!</span></a
+  >
+  
+  
+  <a
+    class="block-hover-mask flex min-w-[50%] grow items-center rounded-l-md p-6 pr-3 font-semibold no-underline"
+    href="https:&#x2F;&#x2F;daradege.ir&#x2F;blog&#x2F;dorood&#x2F;"
+    ><span>آغاز بلاگ</span><span class="mr-1.5">&nbsp;&nbsp;←</span></a
+  >
+  <!---->
+  
+</nav>
+
+<!---->
+
+  <!-- Comment -->
+  
+
+  <!-- Page End inject -->
+  
+</article>
+
+    </main>
+
+    <footer class="mx-auto flex max-w-3xl flex-wrap items-center px-8 py-4 text-sm opacity-60">
+  <div class="mr-auto basis-full lg:basis-1/2">
+    <!---->
+    <!---->
+    &copy; 2025<!---->
+    
+    <a class="link" href="https://daradege.ir/blog">
+      علی صفامنش
+    </a>
+     |<!---->
+    <!---->
+    <a class="link" href="https:&#x2F;&#x2F;creativecommons.org&#x2F;licenses&#x2F;by-sa&#x2F;4.0&#x2F;deed" rel="noopener" target="_blank">
+      CC BY-SA 4.0
+    </a>
+    <!---->
+    
+  </div>
+  <div class="flex basis-full lg:basis-1/2 lg:justify-end">
+    <a class="link mr-6 lg:ml-6" href="https://www.getzola.org/" rel="noopener" target="_blank">
+      قدرت گرفته از زولا
+    </a>
+    <a class="link" href="https://github.com/st1020/kita" rel="noopener" target="_blank">✎ کیتا فارسی</a>
+  </div>
+  <!-- Footer inject -->
+  
+</footer>
+
+
+    <!-- Body End inject -->
+    
+  </body>
+</html>
